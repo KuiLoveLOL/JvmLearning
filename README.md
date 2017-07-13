@@ -6,4 +6,4 @@
 
 java虚拟机所管理的内存将会包括一下几个运行是数据区域：
 
-
+![](http://www.baidu.com/img/bdlogo.gif)  
