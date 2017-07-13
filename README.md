@@ -27,11 +27,11 @@ Java方法执行内存模型，用于存储局部变量，操作数栈，动态�
 #### 运行时常量池（Runtime Constant Pool）：
 是方法区的一部分，用于存放编译器生成的各种字面量和符号引用，这部分内容将在类加载后存放到方法取得运行时常量池中。具备动态性，用的比较多的就是String类的intern()方法。
 #### JVM堆（ Java Virtual Machine Heap）：
-存放所有对象实例的地方。
+存放所有对象实例的地方。<br> 
 新生代，由Eden Space 和大小相同的两块Survivor组成<br> 
 旧生代，存放经过多次垃圾回收仍然存活的对象<br> 
+如图：<br>
 
-如图：<br> 
 ![](https://github.com/KuiLoveLOL/JvmLearning/blob/master/image/bcd.jpg)
 
 #### 直接内存（Direct Memory）：
