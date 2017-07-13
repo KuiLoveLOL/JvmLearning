@@ -5,7 +5,7 @@
   第一章 java内存模型
 ----------------------------------- 
 
-java虚拟机所管理的内存将会包括一下几个运行是数据区域：
+java虚拟机所管理的内存将会包括以下几个运行是数据区域：
 
 ![](https://github.com/KuiLoveLOL/JvmLearning/blob/master/image/abc.jpg)
 
@@ -30,4 +30,7 @@ Java方法执行内存模型，用于存储局部变量，操作数栈，动态�
 存放所有对象实例的地方。
 新生代，由Eden Space 和大小相同的两块Survivor组成
 旧生代，存放经过多次垃圾回收仍然存活的对象
+
+如图：
+![](https://github.com/KuiLoveLOL/JvmLearning/blob/master/image/bcd.jpg)
 
