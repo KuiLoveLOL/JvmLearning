@@ -28,9 +28,12 @@ Java方法执行内存模型，用于存储局部变量，操作数栈，动态�
 是方法区的一部分，用于存放编译器生成的各种字面量和符号引用，这部分内容将在类加载后存放到方法取得运行时常量池中。具备动态性，用的比较多的就是String类的intern()方法。
 #### JVM堆（ Java Virtual Machine Heap）：
 存放所有对象实例的地方。
-新生代，由Eden Space 和大小相同的两块Survivor组成
-旧生代，存放经过多次垃圾回收仍然存活的对象
+新生代，由Eden Space 和大小相同的两块Survivor组成<br> 
+旧生代，存放经过多次垃圾回收仍然存活的对象<br> 
 
-如图：
+如图：<br> 
 ![](https://github.com/KuiLoveLOL/JvmLearning/blob/master/image/bcd.jpg)
+
+#### 直接内存（Direct Memory）：
+它并不是虚拟机运行时数据区的一部分，也不是JAVA虚拟机规范中定义的内存区域。在JDK1.4中加入了NIO类，引入了一种基于通道(Channel)于缓冲区(Buffer)的I/O方式，他可以使用Native函数库直接分配堆外内存，然后通过一个存储在JAVA堆里面的DirectByteBuffer对象作为这块内存的引用进行操作。这样能在一些场景中显著提高性能，因为避免了在JAVA堆中和Native堆中来回复制数据。
 
