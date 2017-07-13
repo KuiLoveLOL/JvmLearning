@@ -30,7 +30,7 @@ Java方法执行内存模型，用于存储局部变量，操作数栈，动态�
 存放所有对象实例的地方。<br> 
 新生代，由Eden Space 和大小相同的两块Survivor组成<br> 
 旧生代，存放经过多次垃圾回收仍然存活的对象<br> 
-如图：<br>
+如图：
 
 ![](https://github.com/KuiLoveLOL/JvmLearning/blob/master/image/bcd.jpg)
 
